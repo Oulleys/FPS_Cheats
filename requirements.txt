@@ -1,0 +1,13 @@
+# Core dependencies
+mss==6.1.0                # For screen capturing
+pyautogui==0.9.54         # For mouse and keyboard automation
+numpy==1.25.0             # For numerical operations
+
+# Image processing and computer vision
+opencv-python==4.8.0.74   # For advanced image recognition and processing
+pillow==10.0.0            # For basic image processing
+
+# Optional libraries
+keyboard==0.13.5          # For keypress detection and handling (optional)
+opencv-contrib-python==4.8.0.74  # For additional OpenCV modules like SIFT/SURF
+scipy==1.11.3             # For advanced mathematical and image processing tasks
