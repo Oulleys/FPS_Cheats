@@ -5,6 +5,7 @@ import logging
 from logging.handlers import RotatingFileHandler
 import time
 import cv2
+import keyboard  # Import the keyboard library
 
 # Configure logging
 handler = RotatingFileHandler("logs/debug.log", maxBytes=5000000, backupCount=5)
@@ -18,6 +19,12 @@ logging.basicConfig(
 def main():
     try:
         while True:
+            # Check if 'Esc' is pressed to exit the loop
+            if keyboard.is_pressed('esc'):  # Listen for 'Esc' key
+                logging.info("Escape key pressed, terminating the program.")
+                print("Escape key pressed, terminating the program.")
+                break  # Exit the loop
+
             # Capture the game screen
             screen = capture_screen()
 
